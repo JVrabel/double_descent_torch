@@ -4,3 +4,8 @@ dist/
 *.ipynb_output
 src/__pycache__/
 __pycache__/
+double_descent_torch/
+models/
+runs/
+double_descent_torch/
+data/
