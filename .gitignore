@@ -9,3 +9,5 @@ models/
 runs/
 double_descent_torch/
 data/
+results.ipynb
+*.ipynb
