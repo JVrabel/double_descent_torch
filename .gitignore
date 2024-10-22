@@ -11,3 +11,7 @@ double_descent_torch/
 data/
 results.ipynb
 *.ipynb
+upl_fig.ipynb
+runs.zip
+figshare_upl.sh
+key.txt
