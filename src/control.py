@@ -22,16 +22,16 @@ def train_model(args):
 
 def main():
     parser = argparse.ArgumentParser(description="Control script for running multiple ResNet18k trainings")
-    parser.add_argument("--num_workers", type=int, default=4, help="Number of parallel processes to run")
+    parser.add_argument("--num_workers", type=int, default=1, help="Number of parallel processes to run")
     args = parser.parse_args()
 
     # Parameters
-    K_VALUES = range(1, 65)  # k values from 1 to 10
+    K_VALUES = range(1, 65)  
     EPOCHS = 1000
     BATCH_SIZE = 128
-    TEST_BATCH_SIZE = 10000
+    TEST_BATCH_SIZE = 1000
     LEARNING_RATE = 0.0001
-    MASTER_SEEDS = 42 # [42, 43, 44]  # Multiple master seeds
+    MASTER_SEEDS = 402 # [42, 43, 44]  # Multiple master seeds
 
     # Create a unique run directory
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
